@@ -9,7 +9,7 @@ def hello_world():
   jobs = load_jobs_from_db()
   return render_template('home.html',
                         jobs=jobs,
-                        company_name='R9')
+                        company_name='MF')
 @app.route("/api/jobs")
 def list_jobs():
   jobs = load_jobs_from_db()
