@@ -22,5 +22,9 @@ def show_job(id):
     return "Not Found", 404
   return render_template('jobpage.html', job=job)
 
+@app.route("/calc")
+def show_calc():
+  return render_template('index.html')
+
 if __name__ == "__main__":
   app.run(host='0.0.0.0', debug=True)
